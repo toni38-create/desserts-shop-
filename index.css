@@ -1,0 +1,163 @@
+html {
+    background-color: rgb(247, 247, 224);
+}
+
+@font-face {
+    font-family: 'RedHatText';
+    src: url('RedHatText-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Vous pouvez ajuster les poids si nécessaire */
+    font-style: normal;  /* Si la police a une version italique, vous pouvez ajouter font-style: italic; */
+}
+
+.titre {
+    font-family: 'RedHatText';
+    margin-left: 110px;
+    margin-top: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Aligne les éléments horizontalement */
+    justify-content: flex-start; /* Positionne les éléments à gauche */
+    align-items: flex-start; /* Aligne les éléments au début sur l'axe vertical */
+    gap: 20px; /* Espace entre le panier et le contenu */
+}
+
+.containerImages {
+    display: flex;
+    position: relative;
+  flex-wrap: wrap; 
+  gap: 18px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.photo {
+    width: 220px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.rectangle {
+    position: absolute;
+    top: 190px; /* Réduit la valeur pour rapprocher le rectangle du haut */
+    margin-left: 35px;
+    width: 140px; /* Largeur du rectangle */
+    height: 40px; /* Hauteur du rectangle */
+    background-color: #ffffff; /* Couleur de fond */
+    border: 1px solid rgb(0, 0, 0); /* Bordure (optionnelle) */
+    border-radius: 50px;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'RedHatText';
+    font-weight:  bold;  /* Vous pouvez ajuster les poids si nécessaire */
+}
+
+.rectangle:hover {
+    cursor: pointer;
+    color: rgb(192, 71, 2);
+    border: 1px solid rgb(192, 71, 2); /* Bordure (optionnelle) */
+}
+
+.rectangle.grand {
+    transform: scale(1.1);
+}
+
+.text {
+    display: flex;
+    align-items: center; /* Centre verticalement le texte */
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    padding-left: 30px; /* Décale le texte vers la droite sans toucher la taille du rectangle */
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.rectangle:hover .text {
+    color: rgb(192, 71, 2); /* Change la couleur du texte au survol du rectangle */
+}
+
+.imageCaddie {
+    display: flex;
+    position: absolute;
+    width: 20px;
+    top: 10px;
+    left: 20px;
+}
+
+h3 {
+    display: flex;
+    font-family: 'RedHatText';
+    font-size: 13px;
+    opacity: 0.5; /* Rend l'élément 60% opaque */
+    font-weight: normal; /* Vous pouvez ajuster les poids si nécessaire */
+}
+
+h2 {
+    display: flex;
+    font-family: 'RedHatText';
+    font-size: 15px;
+    font-weight: 90 600; /* Vous pouvez ajuster les poids si nécessaire */
+}
+
+.prixArticle {
+    font-family: 'RedHatText';
+    font-weight: bold; /* Vous pouvez ajuster les poids si nécessaire */
+    color: rgb(253, 93, 0);
+}
+
+h3, h2, p {
+    margin: 5px 0; /* Réduit les marges verticales (haut et bas) */
+    padding: 0; /* Supprime tout espacement interne éventuel */
+  }
+
+.bloc2 {
+    height: 250px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+}
+
+.titre2 {
+    font-family: 'RedHatText';
+    font-size: 20px;
+    color: rgb(192, 71, 2);
+    margin-left: 20px;
+}
+
+.imgEmpty {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.textItems {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'RedHatText';
+    color: rgb(160, 158, 158);
+}
+
+.quantitéCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: 30px;
+    margin-top: -5px;
+    font-size: 15px;
+    color: black;
+}
+
+.Plus,
+.Moins {
+    width: 19px;
+    height: 19px;
+}
+
+.Plus:hover,
+.Moins:hover {
+    transform: scale(1.3);
+}
